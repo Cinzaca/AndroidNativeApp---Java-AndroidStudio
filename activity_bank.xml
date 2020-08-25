@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BankActivity">
+
+    <ImageView
+        android:id="@+id/blackbackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blackbaground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/art3"
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:layout_marginBottom="532dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/newart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="@font/bold"
+        android:text="Bank Information"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="@font/light"
+        android:text="We are almost there!"
+        android:textColor="#C4FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bginfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/completeNameBar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bginput"
+        android:fontFamily="@font/light"
+        android:hint="Complete Name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/completenameicon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/completenameicon"
+        app:layout_constraintBottom_toBottomOf="@+id/completeNameBar"
+        app:layout_constraintEnd_toEndOf="@+id/completeNameBar"
+        app:layout_constraintTop_toTopOf="@+id/completeNameBar" />
+
+    <EditText
+        android:id="@+id/cardNameBar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bginput"
+        android:fontFamily="@font/light"
+        android:hint="Card name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/cardNumberField"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bginput"
+        android:fontFamily="@font/light"
+        android:hint="Card number"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/expirationDateField"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/bginput"
+        android:fontFamily="@font/light"
+        android:hint="Expiration Date"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/usernameicon3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/usernameicon"
+        app:layout_constraintBottom_toBottomOf="@+id/cardNameBar"
+        app:layout_constraintEnd_toEndOf="@+id/cardNameBar"
+        app:layout_constraintTop_toTopOf="@+id/cardNameBar"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <ImageView
+        android:id="@+id/creditCardIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/creditcardicon"
+        app:layout_constraintBottom_toBottomOf="@+id/cardNumberField"
+        app:layout_constraintEnd_toEndOf="@+id/cardNumberField"
+        app:layout_constraintTop_toTopOf="@+id/cardNumberField" />
+
+    <ImageView
+        android:id="@+id/expirationDateIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/expirationdateicon"
+        app:layout_constraintBottom_toBottomOf="@+id/expirationDateField"
+        app:layout_constraintEnd_toEndOf="@+id/expirationDateField"
+        app:layout_constraintTop_toTopOf="@+id/expirationDateField" />
+
+    <Button
+        android:id="@+id/saveProfileButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bginput"
+        android:fontFamily="@font/regular"
+        android:text="Modify Card"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view" />
+
+    <Button
+        android:id="@+id/viewCardButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bgcancel"
+        android:fontFamily="@font/regular"
+        android:text="Card View"
+        android:textAllCaps="false"
+        android:textColor="#272727"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/uploadedPicture"
+        android:layout_width="75dp"
+        android:layout_height= "75dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/usernameicon"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/logoutIconBank"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/logouticon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blackbackground" />
+
+    <TextView
+        android:id="@+id/logoutTextBank"
+        android:layout_width="64dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="@font/regular"
+        android:src="@drawable/logouticon"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blackbackground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
